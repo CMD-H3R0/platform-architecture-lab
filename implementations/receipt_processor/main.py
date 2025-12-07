@@ -5,7 +5,7 @@ import os
 import logging
 from dotenv import load_dotenv
 from components.security.auth_gateway.auth import get_current_user, RequireRole, UserContext
-from .compliance import check_business_rules
+from implementations.receipt_processor.compliance import check_business_rules
 
 load_dotenv() # Load .env
 
